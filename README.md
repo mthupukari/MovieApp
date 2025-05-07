@@ -1,50 +1,100 @@
-# Welcome to your Expo app 👋
+# 🎬 MovieApp
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**MovieApp** is a cross-platform mobile application built with **React Native** and **Expo**, designed to provide users with an intuitive interface to browse and explore movies. The app fetches data from a movie API, allowing users to view popular, top-rated, and upcoming movies, along with detailed information for each.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- **Browse Movies**: Explore popular, top-rated, and upcoming movies.
+- **Search Functionality**: Search for movies by title.
+- **Movie Details**: View comprehensive details of selected movies, including synopsis, release date, and ratings.
+- **Responsive Design**: Optimized for both Android and iOS devices.
 
+## 🛠️ Technologies Used
+
+- **React Native**: For building the mobile application.
+- **Expo**: To streamline development and testing.
+- **TypeScript**: For type safety and better code maintainability.
+- **Tailwind CSS**: Utilized via `nativewind` for styling components.
+- **TMDB API**: To fetch movie data.
+
+## 📂 Project Structure
+
+```
+MovieApp/
+├── app/                  # Main application components and screens
+├── assets/               # Images and other static assets
+├── components/           # Reusable UI components
+├── constants/            # Constant values used across the app
+├── interfaces/           # TypeScript interfaces
+├── services/             # API service configurations
+├── types/                # Custom TypeScript types
+├── .gitignore
+├── app.json              # Expo configuration
+├── babel.config.js
+├── env.example           # Example environment variables file
+├── metro.config.js
+├── nativewind-env.d.ts
+├── package-lock.json
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+└── README.md
+```
+
+## 🧑‍💻 Getting Started
+
+### Prerequisites
+
+- **Node.js** and **npm** installed on your machine.
+- **Expo CLI** installed globally:
+  ```bash
+  npm install -g expo-cli
+  ```
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/mthupukari/MovieApp.git
+   cd MovieApp
+   ```
+
+2. **Install dependencies**:
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Set up environment variables**:
+   - Create a `.env` file in the root directory.
+   - Copy the contents from `env.example` and add your TMDB API key.
 
+4. **Start the development server**:
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+   - Use the Expo Go app on your device or an emulator to view the app.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📌 Future Enhancements
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **User Authentication**: Allow users to log in and save favorite movies.
+- **Pagination**: Implement infinite scrolling for movie lists.
+- **Offline Support**: Cache data for offline access.
+- **Dark Mode**: Add theme support for better user experience.
 
-## Get a fresh project
+## 🤝 Contributing
 
-When you're ready, run:
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
 
-```bash
-npm run reset-project
-```
+## 📄 License
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Learn more
+## 👨‍💻 Author
 
-To learn more about developing your project with Expo, look at the following resources:
+**Mahit Thupukari**  
+[GitHub](https://github.com/mthupukari)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Feel free to customize this `README.md` to better fit your project's specifics, such as adding screenshots or deployment instructions.
